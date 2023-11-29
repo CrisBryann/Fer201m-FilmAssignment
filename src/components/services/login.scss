@@ -1,0 +1,139 @@
+.fullscreen-login-container {
+  background-image: url('https://tiengtrunganhduong.com/images/201512/tieng-trung-giao-tiep-chu-de-o-trong-rap-chieu-phim/tieng-trung-giao-tiep-chu-de-o-trong-rap-chieu-phim.jpg');
+  height: 100vh;
+
+  /* Chiều rộng full màn hình */
+  width: 100vw;
+
+  /* Không lặp lại ảnh */
+  background-repeat: no-repeat;
+
+  /* Ảnh không scroll cùng trang */
+  background-attachment: fixed;
+
+  /* Ảnh chiếm toàn bộ container */
+  background-size: cover;
+}
+
+.login {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login__container {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 30px;
+  border: 10px solid #849fc8;
+}
+
+.login__textBox {
+  padding: 12px 20px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  display: block;
+  border: none;
+  border-radius: 22px;
+  width: 20vw;
+  color: #fff;
+  border: 0.5px solid rgba(255, 255, 255, 0.0);
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: 0.3s;
+
+  &::placeholder {
+    color: rgb(250, 245, 236);
+  }
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.0);
+    border: 0.5px solid white;
+    transition: 0.3s;
+  }
+
+  &:focus {
+    background-color: rgba(255, 255, 255, 0.0);
+    border: 0.5px solid white;
+    outline: none;
+    transition: 0.3s;
+  }
+
+
+}
+
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+  color: white;
+}
+
+.login__btn {
+  padding: 10px;
+  font-size: 15px;
+  margin-bottom: 10px;
+  border: none;
+  color: black;
+  background-color: rgb(220, 167, 140);
+  text-align: center;
+  display: block;
+  width: fit-content;
+  margin: 20px 0;
+  border-radius: 22px;
+  width: 20vw;
+  transition: 0.35s;
+
+  &:hover {
+    background-color: rgb(226, 189, 171);
+    transition: 0.35s;
+  }
+}
+
+
+.login div {
+  margin-top: 7px;
+}
+
+.login__google {
+  display: flex;
+  align-items: center;
+  transition: color 0.3s;
+  border: 2px solid #a4b1c5;
+}
+
+.login__google:hover {
+  color: #0078d4; /* Đổi yourHoverColor thành màu bạn muốn khi rê chuột qua */
+}
+
+.dashboard {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dashboard__container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #dcdcdc;
+  padding: 30px;
+}
+
+.dashboard__btn {
+  padding: 10px;
+  font-size: 18px;
+  margin-top: 10px;
+  border: none;
+  color: white;
+  background-color: black;
+}
+
+.dashboard div {
+  margin-top: 7px;
+}
